@@ -11,14 +11,13 @@ Technologies & Tools
 
 Features Implemented
 
-### Core Requirements
-- **Navigation bar** — sticky header with logo and Home / Events / Contact links; collapses into a hamburger menu on mobile
-- **Hero section** — headline *"Discover Events Near You"* with animated background and key stats
-- **Featured Events section** — 5 event cards, each showing name, date & time, location, short description, and a Register button
+  Requirements
+- Navigation bar — sticky header with logo and Home / Events / Contact links; 
+- Hero section — headline *"Discover Events Near You"* with animated background and key stats
+- Featured Events section — 5 event cards, each showing name, date & time, location, short description, and a Register button
 
-### Design Highlights
+ Design Highlights
 - Fully responsive across mobile, tablet, and desktop
 - Custom CSS design system with CSS variables (no Bootstrap)
 - Animated hero background blobs and card entrance animations
 - Per-event accent colours on card banners
-*Submitted by Osama Abbasi for the Web Development Internship position at Dynamics 360.*
