@@ -22,7 +22,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ── NAV ── */
 nav {
   position: sticky; top: 0; z-index: 100;
   background: rgba(245,240,232,0.92);
@@ -75,7 +74,6 @@ nav {
 }
 .mobile-menu a:hover { color: var(--accent); }
 
-/* ── HERO ── */
 #home {
   position: relative;
   min-height: 88vh;
@@ -177,7 +175,6 @@ h1 em {
   margin-top: .15rem; letter-spacing: .04em;
 }
 
-/* ── EVENTS SECTION ── */
 #events { padding: 5rem 6vw 2rem; }
 
 .section-header {
@@ -217,7 +214,6 @@ h1 em {
 }
 #searchInput::placeholder { color: var(--muted); }
 
-/* ── CARDS GRID ── */
 .events-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -301,7 +297,6 @@ h1 em {
 }
 .register-btn svg { width: 15px; height: 15px; }
 
-/* ── NO RESULTS ── */
 #noResults {
   display: none; grid-column: 1/-1;
   text-align: center; padding: 4rem 0;
@@ -309,7 +304,7 @@ h1 em {
 #noResults .emoji { font-size: 3rem; margin-bottom: 1rem; }
 #noResults p { color: var(--muted); }
 
-/* ── CONTACT ── */
+
 #contact {
   margin: 5rem 6vw 0;
   background: var(--ink);
@@ -356,7 +351,7 @@ h1 em {
 }
 .contact-submit:hover { opacity: .88; transform: scale(1.02); }
 
-/* ── FOOTER ── */
+
 footer {
   margin: 3rem 6vw;
   padding: 2rem 0;
@@ -367,7 +362,7 @@ footer {
 footer .logo { font-size: 1.2rem; }
 footer p { font-size: .82rem; color: var(--muted); }
 
-/* ── RESPONSIVE ── */
+
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .hamburger { display: flex; }
