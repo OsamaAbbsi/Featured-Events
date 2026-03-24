@@ -1,4 +1,3 @@
-/* ── EVENT DATA ── */
 const events = [
   {
     id: 1,
@@ -52,12 +51,10 @@ const events = [
   },
 ];
 
-/* ── RENDER CARDS ── */
 function renderCards(list) {
   const grid  = document.getElementById('eventsGrid');
   const noRes = document.getElementById('noResults');
 
-  // Remove existing cards (keep #noResults placeholder)
   [...grid.querySelectorAll('.event-card')].forEach(c => c.remove());
 
   if (list.length === 0) {
@@ -106,7 +103,6 @@ function renderCards(list) {
   });
 }
 
-/* ── SEARCH ── */
 document.getElementById('searchInput').addEventListener('input', function () {
   const q = this.value.toLowerCase().trim();
   renderCards(
@@ -120,7 +116,6 @@ document.getElementById('searchInput').addEventListener('input', function () {
   );
 });
 
-/* ── REGISTER BUTTON ── */
 function handleRegister(btn, name) {
   btn.textContent = '✓ Registered!';
   btn.style.background   = '#0d0d0d';
@@ -129,7 +124,6 @@ function handleRegister(btn, name) {
   btn.disabled = true;
 }
 
-/* ── HAMBURGER MENU ── */
 const hamburger  = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
 
@@ -140,6 +134,4 @@ hamburger.addEventListener('click', () => {
 function closeMenu() {
   mobileMenu.classList.remove('open');
 }
-
-/* ── INITIAL RENDER ── */
 renderCards(events);
